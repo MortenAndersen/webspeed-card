@@ -1,0 +1,91 @@
+.link-con {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--gap);
+  margin-block: var(--gap);
+}
+.card-1 {
+  overflow: hidden;
+  border-radius: var(--gap);
+}
+.card-1-link {
+  display: flex;
+  flex-flow: column;
+  padding: 30px 20px;
+  background-color: #3b4564;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  min-height: 300px;
+}
+.card-1-link:hover,
+.card-1-link:hover .card-1-sub-con {
+  text-decoration: none;
+  color: #fff;
+}
+.card-1-link:hover .card-1-bg {
+  transform: scale(10);
+}
+.card-1-title {
+  font-weight: 200;
+  font-size: 1.9rem;
+  line-height: 1.25;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.card-1-sub {
+  font-size: 18px;
+  color: #fff;
+  margin-top: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.card-1-sub-con {
+  font-weight: bold;
+  color: #fbc8be;
+  transition: color 0.5s ease;
+}
+.card-1-bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.card-1:nth-child(2n) a {
+  background-color: #763b00;
+}
+.card-1:nth-child(3n) a {
+  background-color: #812d2e;
+}
+.card-1:nth-child(4n) a {
+  background-color: #753150;
+}
+.card-1:nth-child(5n) a {
+  background-color: #593d63;
+}
+.card-1:nth-child(6n) a {
+  background-color: #2f4858;
+}
+
+.card-1:nth-child(2n) .card-1-bg {
+  background-color: #3ecd5e;
+}
+.card-1:nth-child(3n) .card-1-bg {
+  background-color: #e44002;
+}
+.card-1:nth-child(4n) .card-1-bg {
+  background-color: #952aff;
+}
+.card-1:nth-child(5n) .card-1-bg {
+  background-color: #cd3e94;
+}
+.card-1:nth-child(6n) .card-1-bg {
+  background-color: #4c49ea;
+}
